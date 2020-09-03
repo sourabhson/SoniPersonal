@@ -1,0 +1,68 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Logic.aspx.cs" Inherits="LogicalApp.Logic" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+  
+    <div>
+        <table style="margin:10px;">
+            <tr>
+                <td>
+                    <label>SKU A</label>
+                </td>
+
+                <td>
+                    <asp:TextBox ID="txtA" runat="server" Text="0" MaxLength="4" ToolTip="Unit Price is 50"></asp:TextBox>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>SKU B</label>
+                </td>
+
+                <td>
+                    <asp:TextBox ID="txtB" runat="server" Text="0" MaxLength="4" ToolTip="Unit Price is 30"></asp:TextBox>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>SKU C</label>
+                </td>
+
+                <td>
+                    <asp:TextBox ID="txtC" runat="server" Text="0" MaxLength="4" ToolTip="Unit Price is 20"></asp:TextBox>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>SKU D</label>
+                </td>
+
+                <td>
+                    <asp:TextBox ID="txtD" runat="server" Text="0" MaxLength="4" ToolTip="Unit Price is 15"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <asp:Button ID="btnCalculate" runat="server" Text="Calculate" OnClick="btnCalculate_Click" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <strong>Desired OutPut:-</strong><asp:Label ID="lblOutPut" runat="server" Font-Bold="true" Text="NA"></asp:Label>
+    </div>
+    <br />
+    <div style="clear:both">
+        <strong>OutPut with additional 10% Off:-</strong><asp:Label ID="lblAdditionalOffOutput" runat="server" Font-Bold="true" Text="NA"></asp:Label>
+
+       <div> <strong>Note:- If all Active Promotions will apply then only additional 10% Off </strong></div>
+    </div>
+
+</asp:Content>
